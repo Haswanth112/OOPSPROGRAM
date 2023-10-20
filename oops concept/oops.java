@@ -21,8 +21,17 @@ class   Room
     }
     public static void main(String args[])
     {
+        int roomid;
+        String roomtype;
+        float roomarea;
+        boolean acmachine;
+        Scanner s = new Scanner(System.in);
+        roomid = s.nextInt();
+        roomtype = s.nextLine();
+        acmachine = s.nextBoolean();
+            
         Room room1=new Room();
-        room1.setdata(101,"luxury",990.21f, true);
+        room1.setdata(roomid,roomtype,roomarea, acmachine);
         room1.displayData();
     }
 
